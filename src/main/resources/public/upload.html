@@ -22,7 +22,7 @@
     </div>
 
     <script>
-
+        // Function for deleting a file
         function deletePicture(filename) {
             console.log(filename);
             $.ajax({
@@ -42,7 +42,7 @@
 
         // ONCE THE DOCUMENT IS FULLY LOADED
         $(document).ready(function() {
-            //AJAX CALL FOR POPULATING FOSSIL PHOTO FILENAMES
+            //AJAX CALL FOR POPULATING PHOTO FILENAMES
             $.ajax({
                 url: "/getFileNames",
                 type: "POST",
